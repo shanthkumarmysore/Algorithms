@@ -1,14 +1,14 @@
-
-package ArraysAndStrings.chapter1.edu;
-
+package edu.samples.chapter1_arrays;
 
 public class UniqueCharacters_Simple {
 
 public static void main(String[]args){
 
-        System.out.println( "(stridngh) is a Unique Character String " + isUniqueChars("stridngh"));
+        System.out.println( "Is 'stridngh'  a Unique Character String ? Answer =>  " + isUniqueChars("stridngh"));
 
-        }
+        System.out.println( "Is 'stridngh'  a Unique Character String ? Answer =>  " + isUniqueChars("addhi"));
+
+    }
 
 
         static boolean  isUniqueChars(String str){

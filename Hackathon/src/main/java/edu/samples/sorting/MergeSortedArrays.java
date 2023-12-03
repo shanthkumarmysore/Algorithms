@@ -1,4 +1,4 @@
-package ArraysAndStrings.chapter1.edu.self.sorting;
+package edu.samples.sorting;
 
 public class MergeSortedArrays {
 	public static void main(String[] args) {
