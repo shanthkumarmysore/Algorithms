@@ -1,5 +1,9 @@
 package edu.samples.chapter1_arrays;
-
+/*
+   CCI Chapter 1 Arrays and String
+   1.1 Implement an algorithm to determine if a string has all unique characters. what if you
+   cannot use additional data structures.
+ */
 public class UniqueCharacters_Simple {
 
 public static void main(String[]args){
