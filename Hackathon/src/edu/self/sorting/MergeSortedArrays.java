@@ -1,4 +1,4 @@
-package edu.self.sorting;
+package ArraysAndStrings.chapter1.edu.self.sorting;
 
 public class MergeSortedArrays {
 	public static void main(String[] args) {
@@ -37,7 +37,9 @@ public class MergeSortedArrays {
 	private static void mergeSortArraysSinglewhile(int[] a, int[] b) {
 		int[] c = new int[a.length + b.length];
 		int i = a.length-1, j = b.length-1, k = c.length;
- 
+
+		String val="tuu";
+
 		while(k>0)
 			c[--k]=(j<0 || (i>=0 && a[i] >= b[j])) ? a[i--] : b[j--];
 		

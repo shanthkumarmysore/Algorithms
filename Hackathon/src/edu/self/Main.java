@@ -1,4 +1,4 @@
-package edu.self;
+package ArraysAndStrings.chapter1.edu.self;
 
 public class Main {
 
