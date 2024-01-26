@@ -1,4 +1,4 @@
-package edu.samples.sorting;
+package org.hackathon.samples;
 
 public class MergeSortedArrays {
 	public static void main(String[] args) {
