@@ -8,7 +8,7 @@ space at the end to hold the additional characters,and that you are given the "t
 If implementing in Java , please use a character array so that you can perform this operation in place.
 
 Example Input "Mr John Smith   ",13
-        Output "Mr%20JohnSmith"
+        Output "Mr%20John%20Smith"
 
 A common approach in string manipulation problems is to edit the string starting from the end and working backwards.
 This is useful because we have an extra buffer at the end, which alllows us to change characters without worrying about
@@ -36,7 +36,9 @@ static char[] replaceSpaces(char[] str , int truelength){
 
     index = truelength + spaceCount *2;
 
-    if (truelength < str.length) {str[truelength] = '\0';} //End Array
+    if (truelength < str.length) {
+        str[truelength] = '\0'; //End Array
+    }
 
     for( i = truelength-1 ; i >= 0 ; i--){
 
@@ -60,6 +62,9 @@ static char[] replaceSpaces(char[] str , int truelength){
 
         char[] str = replaceSpaces(s.toCharArray(),13);
         System.out.println("Replacing space with '%20' character in passed string => '" +s + "' is => " +  String.copyValueOf(str));
+        String t = "Shantha  Kumar Smith      ";
+        char[] tstr = replaceSpaces(t.toCharArray(),20);
+        System.out.println("Replacing space with '%20' character in passed string => '" +t + "' is => " +  String.copyValueOf(tstr));
     }
 
 }
